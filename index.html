@@ -12,8 +12,54 @@
 </head>
 
 <body>
-<div id="test">
-    <h1>eFP2 - Quantitative Expression Browser</h1>
+<!-- HEADER -->
+<div class="header">
+    <div id="banner">[BANNER]</div>
+    <div id="title">
+        <h1>eFP2 Browser</h1>
+    </div>
+</div>
+
+<!-- CONTENT -->
+<div class="container">
+
+    <div id="input">
+        <ul id="inputs">
+        <li>
+        <form id="experiment_selector">
+            <span>Experiment:&nbsp;</span>
+            <select name="experiment">
+                <option value="DEFAULT_EXPERIMENT">DEFULT_EXPERIMENT</option>
+            </select>
+            <input type="submit" value="GO"/>
+        </form>
+        </li>
+        <form id="expression_inputs">
+            <li>
+                <span class="item">Feature A:&nbsp;</span>
+                <input type="text" name="featureA" />
+            </li>
+            <li>
+                <span class="item">Feature B:&nbsp;</span>
+                <input type="text" name="featureB" />
+            </li>
+            <li>
+                <span class="item">Compare mode:&nbsp;</span>
+                <select name="compare_mode">
+                    <option value="mode">control</option>
+                </select>
+            </li>
+        </form>
+        </ul>
+    </div>
+
+    <div id="drawbox">
+    </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    <p><a target="_blank" href="https://github.com/warrenson/eFP2">eFP2 Browser @ GitHub</a> - Copyleft GPLv3 2016</p>
 </div>
 
 <!-- source scripts -->

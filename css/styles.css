@@ -4,57 +4,122 @@
 /* Basic Font Stack */
 /*----------------------------------------------------------------------------*/
 
+body {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 0.9em;
+	font-style: normal;
+	font-variant: normal;
+    min-width: 1200px;
+}
 h1 {
 	font-family: Verdana, Geneva, sans-serif;
-	font-size: 24px;
+	font-size: 1.8em;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 500;
-	line-height: 26.4px;
+}
+h2 {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 1.5em;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
 }
 h3 {
 	font-family: Verdana, Geneva, sans-serif;
-	font-size: 14px;
+	font-size: 1.2em;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 500;
-	line-height: 15.4px;
 }
 p {
 	font-family: Verdana, Geneva, sans-serif;
-	font-size: 14px;
+	font-size: 0.9em;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 400;
-	line-height: 20px;
 }
 blockquote {
 	font-family: Verdana, Geneva, sans-serif;
-	font-size: 21px;
+	font-size: 1em;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 400;
-	line-height: 30px;
 }
 pre {
 	font-family: Verdana, Geneva, sans-serif;
-	font-size: 13px;
+	font-size: 0.9em;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 400;
-	line-height: 18.5714px;
 }
 
 /*----------------------------------------------------------------------------*/
 /* Header
 /*----------------------------------------------------------------------------*/
 
+div.header {
+    padding-left: 0.5em;
+    margin: 0;
+    height: 70px;
+    border: solid 1px #888;
+    background-color: #ccc;
+}
+
+div#banner {
+    float: right;
+    margin: 0.1em;
+    background-color: #777;
+    height: 100%;
+    width: 80%;
+}
 
 
 /*----------------------------------------------------------------------------*/
 /* Content Wrapper
 /*----------------------------------------------------------------------------*/
+div.container {
+    min-height: 200px;
+}
+
+/*----------------------------------------------------------------------------*/
+/* Input
+/*----------------------------------------------------------------------------*/
+div#input {
+    margin: 0.5em 0 0.5em 0;
+    background:  #ccc;
+    border: 1px solid #888;
+}
+
+div#input form {
+    display: inline;
+}
+
+ul#inputs {
+    padding: 0;
+    line-height: 2em;
+}
+
+ul#inputs li {
+    display: inline;
+    padding: 1em;
+    border-left: 1px solid #888;
+}
+ul#inputs input[type='text'] {
+    border: 1px solid #888;
+}
 
 /*----------------------------------------------------------------------------*/
 /* Footer
 /*----------------------------------------------------------------------------*/
+div.footer {
+    padding: 0.5em;
+    margin: 0;
+    border: solid 1px #888;
+    background-color: #ccc;
+}
+
+div.footer p {
+    text-align: center;
+}
+
